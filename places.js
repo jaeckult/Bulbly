@@ -1,7 +1,7 @@
 const axios = require('axios');
 require('dotenv').config();
 
-const GOOGLE_PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY || 'AIzaSyDlyO4k8PmZqRfAWrsxgJHBMQ3YUKST4iY';
+const GOOGLE_PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY;
 
 async function searchPlaces(query, location = '9.03,38.74') {
   const url = `https://maps.googleapis.com/maps/api/place/textsearch/json`;
